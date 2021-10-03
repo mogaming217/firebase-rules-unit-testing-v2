@@ -1,0 +1,33 @@
+{
+  "name": "firebase-rules-unit-testing-v2",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "firebase emulators:exec --only firestore 'jest'"
+  },
+  "devDependencies": {
+    "@firebase/rules-unit-testing": "^2.0.1",
+    "@types/jest": "^27.0.2",
+    "@types/uuid": "^8.3.1",
+    "jest": "^27.2.4",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.4.3",
+    "uuid": "^8.3.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testMatch": [
+      "**/*.test.ts"
+    ]
+  },
+  "dependencies": {
+    "firebase": "^9.1.1"
+  }
+}
